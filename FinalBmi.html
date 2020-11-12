@@ -1,0 +1,62 @@
+<!Doctype html>
+<html>
+<head>
+ <title>constNelVert MBI Calculator</title>
+     <link rel="icon" href="img/constNelJhoVert.jpg" type="image/x-icon">
+     <link href="./bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+     <style type="text/css">
+     	.form-control{
+     		background-color: transparent !important;
+     		color: blue !important;
+     	}
+     </style>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.952);">
+	<!-- [ bmi form start] -->
+  <center>
+     <form name="bmiForm">
+       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-4">
+     	 <div class="card col-md-9 border-white mb-4" style="background-color: rgb(0, 0, 0);">
+			<div class="row text-center mb-4">
+		      <div class="col-md-12 align-items-center">
+				<div class="card-body">
+				  <div class=" mb-4" >
+     				 <div class="form-group mb-4">
+     				 	<h4 class="mb-4 text-center"><strong style="color:rgb(255, 255, 255); font-family: verdana;">Body Mass Index Calculator</strong></h4>
+						<div class="form-group mb-4">
+							<code style="color:rgb(255, 0, 0)" id="Warning"></code>
+							<label class="floating-label " ><strong style="color:rgb(255, 255, 255); font-family: verdana;">Weight (kg)</strong></label>
+							<input type="number" class=" form-control mb-4 text-center" name="weight" placeholder="Type your weight here" style="font-family: verdana; font-weight: bold;" required="" >
+						</div>
+						<div class="form-group mb-4">
+							<label class="floating-label" ><strong style="color:rgb(255, 255, 255); font-family: verdana;">Height (cm)</strong></label>
+							<input type="number" class="form-control mb-4 text-center" name="height" placeholder="Type your height here" style="font-family: verdana; font-weight: bold;" required="" >
+						</div>
+						<div class="form-group mb-4">
+							<code style="color:rgb(0, 0, 255); font-family: verdana; font-weight: bold;" id="message" class="mb-4"></code><br>
+							<input type="button" style="color:rgb(255, 255, 255); font-weight: bold; font-family: verdana;"  value="Calculate BMI" class="btn btn-block btn-primary mb-4 " onClick="calculateBmi()"></a></input>
+					   </div>
+					  <div class="form-group">
+							<label><strong style="color:rgb(255, 255, 255); font-family: verdana;">Your BMI:</strong></label>
+							<input type="text" class="form-control text-center" name="bmi" readonly="" style="background-color: rgb(0, 0, 0); border:rgb(0, 0, 0); font:rgb(255, 0, 0); font-weight: bold; font-family: verdana; color: blue; font-size:20px; ">
+							<label><strong style="color:rgb(255, 255, 255); font-family: verdana;">Your BMI Category:</strong></label>
+							<input type="text" class="form-control bg-transparent border-white text-center" name="bmiCategory" readonly="" style="background-color: rgb(0, 0, 0); border:rgb(0, 0, 0); font:rgb(255, 0, 0); font-weight: bold; font-family: verdana; color: blue;font-size:20px; ">
+							<button type="reset" class="btn btn-block btn-success mb-4"><strong style="font-family: verdana;">Reset</strong></button>
+				     </div>
+		     	   </div>
+				</div>
+			  </div>
+			</div>
+  		</div>
+	</form>
+</center>
+<!--  [bmi form end]	 -->
+ 	<!-- [ js function src] -->
+	<script src="./function.js"></script>
+<!--  [footer start] -->
+	<div class="footer text-center">
+	      <p style="color:rgb(0, 0, 255);">Copyright &copy;<span>Jhonel Vertudazo</span> All Rights Reserved 2020</p>
+	</div>
+	<!-- [footer end] -->
+</body>
+</html>
